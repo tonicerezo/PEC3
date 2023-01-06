@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('https://css.gg/border-style-solid.css');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -70,6 +71,10 @@ header{
 .grid p{text-align: center;color:rgb(93, 95, 121);font-size: 14px;}
 .grid h3{text-align: center;color:rgb(93, 95, 121);font-size: 16px;margin-bottom:25px}
 
+.card a{text-decoration: none;color:rgb(93, 95, 121)}
+.card a:hover{color:rgb(245, 157, 35)}
+
+
 /*Tratamiento CSS del footer.Mobile First*/
 
 footer{display:flex;background-color: black;padding-top:20px;flex-direction: column;align-items: center;}
@@ -129,6 +134,7 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
 
 
   h1{text-align: center;margin-top:30px}
+
   #enlaces-referentes {margin:20px 2% 20px 2%;text-align: center;}
   #enlaces-referentes a{font-size:12px;text-decoration: none;color: rgb(245, 157, 35);}
   #enlaces-referentes a::after{content: " ·";}
@@ -146,7 +152,7 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
 .numero{color:rgb(240, 93, 80);font-size:30px;font-weight: 800;margin-top:10px;}
 
 #titulo-ref h3{color:rgb(93, 95, 121)}
-#titulo-ref h2{margin-bottom:10px;margin-top:30px;}
+#titulo-ref h2{margin-bottom:10px;margin-top:30px;text-align: left;}
 #titulo-ref p{font-size:12px;color:rgb(93, 95, 121)}
 #titulo-ref {line-height: 23px;}
 
@@ -178,3 +184,63 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
     .texto-ref p{margin-top:9px}
     #galeria-referentes{margin:20px 13% 20px 50px;}
   }
+
+  /*Página 11 de febrero. Mobile First*/
+
+  h2{text-align: center;margin-top:10px;margin-bottom:30px}
+  #textos{margin: 20px 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  #textos p{font-size:12px;line-height: 18px;color:rgb(93, 95, 121)}
+  .gris{background-color: rgb(227, 228, 230);font-size:12px;line-height: 20px;color:black;padding:4%}
+  #bloque-cita{display: flex;}
+  .cita {margin-left:2%;font-size:10px}
+  .gg-border-style-solid{color:red}
+  .gg-border-style-solid {
+    transform: scale(var(--ggs,1));
+}
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin:0 5% 0% 5%;
+} 
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+figure{margin-bottom:30px}
+figcaption{font-size:10px;color:rgb(93, 95, 121);margin-left:5%}
+
+@media (min-width: 1024px) {
+  .gris{padding:1%;margin-left:4%;margin-right:6%;}
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin:0 -35% 0% 24%;
+  } 
+  
+
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+}
