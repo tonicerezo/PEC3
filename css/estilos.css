@@ -61,9 +61,10 @@ header{
 
 .seccion2{text-align:center;margin-top:30px}
 .seccion2 a{color:rgb(245, 157, 35);font-size:12px;margin-top:5px;text-decoration: none;}
+.seccion2 a:hover{color:rgb(93, 95, 121)}
 
 
-/*Tratamiento CSS de la galería. MobileFirst*/
+/*Tratamiento CSS de la galería en index.html. MobileFirst*/
 .grid{margin:20px 2%;display: grid;}
 .grid img {
     max-width: 100%;
@@ -89,9 +90,12 @@ footer label{color:white;font-size: 10px;}
 form button{font-size:12px;margin-top:15px;margin-bottom:30px;background-color:rgb(240, 93, 80);color:white;border:none;padding:4%;margin-left:27%}
 footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
 
-#enlaces-footer{display: flex;
+#enlaces-footer{
+  display: flex;
   flex-direction: column;
-  align-items: center;}
+  align-items: center;
+}
+#enlaces-footer a:hover{color:rgb(245, 157, 35)}
 /*Tratamiento de los breakpoints para diseño responsive del menú y la cabecera de index.html*/
 #pie-footer{display:flex;flex-direction: column;align-items: center;margin-top:15px;margin-bottom:20px}
 #pie-footer p{font-size:6px;padding-bottom:5px;margin:0}
@@ -130,13 +134,16 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
     #enlaces-footer{flex-direction: row;}
 
   }
+ /***************************************/ 
  /*Página referentes.html. MOBILE FIRST*/
+ /***************************************/ 
 
 
   h1{text-align: center;margin-top:30px}
 
   #enlaces-referentes {margin:20px 2% 20px 2%;text-align: center;}
   #enlaces-referentes a{font-size:12px;text-decoration: none;color: rgb(245, 157, 35);}
+  #enlaces-referentes a:hover{color:rgb(93, 95, 121)}
   #enlaces-referentes a::after{content: " ·";}
 
 /*Tratamiento del menú de enlaces en referentes.html.MOBILE FIRST*/
@@ -146,36 +153,42 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
   #enlaces-referentes a{margin-bottom:5px}
   #enlaces-referentes a::after{content: "";}
 
+
 }
 /*Tratamiento de los estilos de la información en referentes.html. MOBILE FIRST*/
 
-.numero{color:rgb(240, 93, 80);font-size:30px;font-weight: 800;margin-top:10px;}
+.numero{color:rgb(240, 93, 80);font-size:30px;font-weight: 800;margin-top:25px;margin-bottom:5px;text-align: left;}
 
-#titulo-ref h3{color:rgb(93, 95, 121)}
-#titulo-ref h2{margin-bottom:10px;margin-top:30px;text-align: left;}
-#titulo-ref p{font-size:12px;color:rgb(93, 95, 121)}
-#titulo-ref {line-height: 23px;}
+.titulo-ref h3{color:rgb(93, 95, 121)}
+.titulo-ref h2{margin-bottom:10px;margin-top:30px;text-align: left;}
+.titulo-ref p{font-size:12px;color:rgb(93, 95, 121)}
+.titulo-ref {line-height: 23px;}
 
-#foto-ref{margin-top:10px;}
+.foto-ref{margin-top:10px;}
 
 .texto-ref {font-size:12px;color:rgb(93, 95, 121)}
 .texto-ref p{margin-bottom:10px;margin-top:15px}
 .texto-ref a{color:rgb(245, 157, 35);text-decoration: none;}
+.texto-ref a:hover{color:rgb(93, 95, 121)}
+
+
 
 
 /*Tratamiento de las imágenes en referentes.html*/
 #galeria-referentes{margin:20px 5%;display: flex;flex-direction: column;}
-#foto-ref img {
+.foto-ref img {
     max-width: 100%;
   }
 
   @media (min-width: 426px) {
     #galeria-referentes{display:flex;flex-direction:column}
-    #titulo-ref{width:40%;display: flex;flex-direction: column;justify-content: center;}
-    #foto-ref{margin-top:10px;margin-left:8%;margin-right:4%}
-    #foto-txt{display: flex;flex-direction: row}
+    /* .titulo-ref{width:40%;display: flex;flex-direction: column;justify-content: center;} */
+    .foto-ref{margin-top:10px;margin-left:8%;margin-right:4%}
+    .foto-txt{display: flex;flex-direction: row}
     .texto-ref{margin-right:2%;display: flex;flex-direction: column;justify-content: center;}
-    #cientifica{display: flex;}
+    .cientifica{display: grid;   grid-template-columns: 1fr 1fr 2fr;   gap: 1rem;}
+    .titulo-ref h2{margin-bottom:10px;text-align: left;}
+
     
   }
   @media (min-width: 1024px) {
@@ -183,9 +196,12 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
     #enlaces-referentes{width: 25%;margin-right:0}
     .texto-ref p{margin-top:9px}
     #galeria-referentes{margin:20px 13% 20px 50px;}
-  }
+    .titulo-ref h2{margin-bottom:10px;text-align: left;}
 
+  }
+ /***************************************/ 
   /*Página 11 de febrero. Mobile First*/
+ /***************************************/ 
 
   h2{text-align: center;margin-top:10px;margin-bottom:30px}
   #textos{margin: 20px 5%;
@@ -196,7 +212,7 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
   .gris{background-color: rgb(227, 228, 230);font-size:12px;line-height: 20px;color:black;padding:4%}
   #bloque-cita{display: flex;}
   .cita {margin-left:2%;font-size:10px}
-  .gg-border-style-solid{color:red}
+  .gg-border-style-solid{color:rgb(240, 93, 80)}
   .gg-border-style-solid {
     transform: scale(var(--ggs,1));
 }
@@ -221,6 +237,7 @@ footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
 figure{margin-bottom:30px}
 figcaption{font-size:10px;color:rgb(93, 95, 121);margin-left:5%}
 
+
 @media (min-width: 1024px) {
   .gris{padding:1%;margin-left:4%;margin-right:6%;}
   .embed-container { 
@@ -231,9 +248,6 @@ figcaption{font-size:10px;color:rgb(93, 95, 121);margin-left:5%}
     height: auto;
     margin:0 -35% 0% 24%;
   } 
-  
-
-
   .embed-container iframe,
   .embed-container object,
   .embed-container embed { 
@@ -243,4 +257,20 @@ figcaption{font-size:10px;color:rgb(93, 95, 121);margin-left:5%}
     width: 50%;
     height: 50%;
   }
+}
+
+ /***************************************/ 
+/*Página iniciativas.html. MOBILE FIRST*/
+ /***************************************/ 
+
+.lista{margin:20px 5%}
+.lista li{color:rgb(93, 95, 121);font-size:17px;font-weight: 700;list-style: none;margin-bottom: 10px;margin-top:25px}
+.lista li::before {content: "■"; color:rgb(240, 93, 80);font-size: 22px;}
+.lista p{font-size:12px;color:rgb(93, 95, 121)}
+.lista a{color:rgb(245, 157, 35);font-size:12px;text-decoration: none;margin-bottom:10px}
+.lista a:hover{color:rgb(93, 95, 121)}
+
+/*Media Query para el ajuste de la lista en escritorio*/
+@media (min-width: 1024px) {
+  .lista{margin-left:20%;margin-right:20%}
 }
