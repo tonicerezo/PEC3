@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('https://css.gg/border-style-solid.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    
+ }
+
+body{
+    font-family:'Inter', sans-serif;
+}
+
+
+.nav_items{display:flex;flex-direction: row; list-style: none;}
+
+
+
+.nav_items li{padding-top:4px;padding-left:20px;}
+
+nav li a{
+    color: rgb(93, 95, 121);
+    text-decoration: none;
+    font-size: 12px;    
+    font-weight: 700;
+}
+
+nav li a:hover{
+    color: rgb(245, 157, 35);
+}
+
+#container_logo a{
+    color:rgb(93, 95, 121);
+    font-weight: 700;
+    font-size: 10px;
+    text-decoration: none;
+}
+.logo{width: 65px;}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding:30px 17%;
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    margin:0 17%;
+
+}
+#rojo{background-color: rgb(240, 93, 80);display: flex;justify-content: center;}
+.logo-cabecera{width:250px;height: 250px; padding:3%}
+
+#naranja{background-color: rgb(245, 157, 35);padding:3%}
+#naranja h1{margin-bottom:20px}
+#naranja p{line-height: 25px;}
+
+
+
+.seccion2{text-align:center;margin-top:30px}
+.seccion2 a{color:rgb(245, 157, 35);font-size:12px;margin-top:5px;text-decoration: none;}
+.seccion2 a:hover{color:rgb(93, 95, 121)}
+
+
+/*Tratamiento CSS de la galería en index.html. MobileFirst*/
+.grid{margin:20px 2%;display: grid;}
+.grid img {
+    max-width: 100%;
+  }
+.grid p{text-align: center;color:rgb(93, 95, 121);font-size: 14px;}
+.grid h3{text-align: center;color:rgb(93, 95, 121);font-size: 16px;margin-bottom:25px}
+
+.card a{text-decoration: none;color:rgb(93, 95, 121)}
+.card a:hover{color:rgb(245, 157, 35)}
+
+
+/*Tratamiento CSS del footer.Mobile First*/
+
+footer{display:flex;background-color: black;padding-top:20px;flex-direction: column;align-items: center;}
+.enlace-logo{text-decoration: none;font-size:12px;color:white;margin-top:10px}
+footer p{color:white;font-size:14px;margin-top:20px}
+
+#email{color:rgb(227, 228, 230);background-color: black;border:none;margin-top:20px;margin-bottom:10px;
+  margin-left:15%
+  ;text-align: center}
+#politica{margin-top:15px}
+footer label{color:white;font-size: 10px;}
+form button{font-size:12px;margin-top:15px;margin-bottom:20px;background-color:rgb(240, 93, 80);color:white;border:none;padding:4%;margin-left:27%}
+footer a{color:white;font-size:10px;text-decoration: none;padding-bottom:5px}
+
+#enlaces-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#enlaces-footer a:hover{color:rgb(245, 157, 35)}
+/*Tratamiento de los breakpoints para diseño responsive del menú y la cabecera de index.html*/
+#pie-footer{display:flex;flex-direction: column;align-items: center;margin-top:15px;margin-bottom:20px}
+#pie-footer p{font-size:6px;padding-bottom:5px;margin:0}
+#pie-footer a{font-size:6px}
+
+@media (max-width: 1023px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding:0;
+      margin-top:10px;
+    }
+    .nav_items {
+        flex-direction: column;
+        margin-top:20px;
+        align-items: center;
+      }
+    .nav_items li{padding:0}
+    #cabecera{flex-direction: column;margin:35px 2%}  
+    #rojo{width: 100%;}
+    #naranja{width: 100%;padding:3%} 
+    #naranja h1{font-size:25px;margin-bottom:10px;text-align: center;}   
+
+  }
+
+  /*Tratamiento CSS de la galería. Versión tablet y escritorio*/
+
+  @media (min-width: 426px) {
+    .grid { grid-template-columns: repeat(2, 1fr);column-gap: 30px;margin-top:20px}
+    #enlaces-footer{flex-direction: row;}
+    #enlaces-footer a{margin-left:7px}
+
+  }
+  @media (min-width: 1026px) {
+    .grid { grid-template-columns: repeat(4, 1fr); margin:0 17%;column-gap: 30px;margin-top:20px}
+    #enlaces-footer{flex-direction: row;}
+
+  }
+ /***************************************/ 
+ /*Página referentes.html. MOBILE FIRST*/
+ /***************************************/ 
+
+
+  h1{text-align: center;margin-top:30px}
+
+  #enlaces-referentes {margin:20px 2% 20px 2%;text-align: center;}
+  #enlaces-referentes a{font-size:12px;text-decoration: none;color: rgb(245, 157, 35);}
+  #enlaces-referentes a:hover{color:rgb(93, 95, 121)}
+  #enlaces-referentes a::after{content: " ·";}
+
+/*Tratamiento del menú de enlaces en referentes.html.MOBILE FIRST*/
+
+@media (min-width: 1024px) {
+  #enlaces-referentes{width:20%;display: flex;flex-direction:column;margin:30px 17%;text-align: left;}
+  #enlaces-referentes a{margin-bottom:5px}
+  #enlaces-referentes a::after{content: "";}
+
+
+}
+/*Tratamiento de los estilos de la información en referentes.html. MOBILE FIRST*/
+
+.numero{color:rgb(240, 93, 80);font-size:30px;font-weight: 800;margin-top:25px;margin-bottom:5px;text-align: left;}
+
+.titulo-ref h3{color:rgb(93, 95, 121)}
+.titulo-ref h2{margin-bottom:10px;margin-top:30px;text-align: left;}
+.titulo-ref p{font-size:12px;color:rgb(93, 95, 121)}
+.titulo-ref {line-height: 23px;}
+
+.foto-ref{margin-top:10px;}
+
+.texto-ref {font-size:12px;color:rgb(93, 95, 121)}
+.texto-ref p{margin-bottom:10px;margin-top:15px}
+.texto-ref a{color:rgb(245, 157, 35);text-decoration: none;}
+.texto-ref a:hover{color:rgb(93, 95, 121)}
+
+
+
+
+/*Tratamiento de las imágenes en referentes.html*/
+#galeria-referentes{margin:20px 5%;display: flex;flex-direction: column;}
+.foto-ref img {
+    max-width: 100%;
+  }
+
+  @media (min-width: 426px) {
+    #galeria-referentes{display:flex;flex-direction:column}
+    /* .titulo-ref{width:40%;display: flex;flex-direction: column;justify-content: center;} */
+    .foto-ref{margin-top:10px;margin-left:8%;margin-right:4%}
+    .foto-txt{display: flex;flex-direction: row}
+    .texto-ref{margin-right:2%;display: flex;flex-direction: column;justify-content: center;}
+    .cientifica{display: grid;   grid-template-columns: 1fr 1fr 2fr;   gap: 1rem;}
+    .titulo-ref h2{margin-bottom:10px;text-align: left;}
+
+    
+  }
+  @media (min-width: 1024px) {
+    #principal{display:flex}
+    #enlaces-referentes{width: 25%;margin-right:0}
+    .texto-ref p{margin-top:9px}
+    #galeria-referentes{margin:20px 13% 20px 50px;}
+    .titulo-ref h2{margin-bottom:10px;text-align: left;}
+
+  }
+ /***************************************/ 
+  /*Página 11 de febrero. Mobile First*/
+ /***************************************/ 
+
+  h2{text-align: center;margin-top:10px;margin-bottom:30px}
+  #textos{margin: 20px 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  #textos p{font-size:12px;line-height: 18px;color:rgb(93, 95, 121)}
+  .gris{background-color: rgb(227, 228, 230);font-size:12px;line-height: 20px;color:black;padding:4%}
+  #bloque-cita{display: flex;}
+  .cita {margin-left:2%;font-size:10px}
+  .gg-border-style-solid{color:rgb(240, 93, 80)}
+  .gg-border-style-solid {
+    transform: scale(var(--ggs,1));
+}
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin:0 5% 0% 5%;
+} 
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border:0;
+}
+figure{margin-bottom:30px}
+figcaption{font-size:10px;color:rgb(93, 95, 121);margin-left:5%}
+
+
+@media (min-width: 1024px) {
+  .gris{padding:1%;margin-left:4%;margin-right:6%;}
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin:0 -35% 0% 24%;
+  } 
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+ /***************************************/ 
+/*Página iniciativas.html. MOBILE FIRST*/
+ /***************************************/ 
+
+.lista{margin:20px 5%}
+.lista li{color:rgb(93, 95, 121);font-size:17px;font-weight: 700;list-style: none;margin-bottom: 10px;margin-top:25px}
+.lista li::before {content: "■"; color:rgb(240, 93, 80);font-size: 22px;}
+.lista p{font-size:12px;color:rgb(93, 95, 121)}
+.lista a{color:rgb(245, 157, 35);font-size:12px;text-decoration: none;margin-bottom:10px}
+.lista a:hover{color:rgb(93, 95, 121)}
+
+/*Media Query para el ajuste de la lista en escritorio*/
+@media (min-width: 1024px) {
+  .lista{margin-left:20%;margin-right:20%}
+}
